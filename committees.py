@@ -14,7 +14,7 @@ class CommitteesClient(Client):
         Takes an FEC-assigned 9-character committee identifier and campaign cycle,
         returns the specified FEC committee for the given cycle
         """
-        path = "{cycle}/committees/{fec-id}.json".format(fec_id=fec_id, cycle=cycle)
+        path = "{cycle}/committees/{fec_id}.json".format(fec_id=fec_id, cycle=cycle)
         return self.fetch(path)
 
     def recently_added(self, cycle=CURRENT_CYCLE):

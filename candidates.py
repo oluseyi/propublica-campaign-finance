@@ -83,7 +83,7 @@ class CandidatesClient(Client):
         Takes a campaign cycle and FEC-assigned 9-character committee ID,
         returns the most recent late contributions to a specific committee
         """
-        path= "{cycle}/committees/{fec-id}/48hour.json".format(cycle=cycle, fec_id=fec_id)
+        path= "{cycle}/committees/{fec_id}/48hour.json".format(cycle=cycle, fec_id=fec_id)
         return self.fetch(path)
     
     def late_contributions_by_date(self, year, month, day, cycle=CURRENT_CYCLE):
